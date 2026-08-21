@@ -1,0 +1,244 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* Nome do jogo */
+
+#nome {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 60px;
+    font-family: cursive;
+    margin: 10px;
+}
+
+
+/* Container principal */
+
+#container {
+    width: 80%;
+    height: 600px;
+
+    background-color: rgb(59, 59, 59);
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Área do jogo */
+
+#jogo {
+    display: grid;
+
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+
+    gap: 3px;
+
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Configuração */
+
+#config {
+    background-color: rgb(83, 77, 77);
+
+    width: 100%;
+    height: 40px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(59, 59, 59);
+
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+
+/* Botão começar */
+
+#btn {
+    background-color: darkslategrey;
+    color: rgb(184, 183, 183);
+
+    border-radius: 10px;
+
+    width: 100px;
+    height: 30px;
+
+    border: none;
+
+    box-shadow: 0px 0px 5px black;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#btn:hover {
+    color: red;
+    box-shadow: 0 0 15px black;
+}
+
+
+/* Quadrados */
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+    background-color: rgb(134, 148, 148);
+
+    box-shadow: 0px 0px 5px rgb(30, 30, 30);
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.quadrado:hover {
+    background-color: gray;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/* Saída */
+
+#saida {
+    background-color: rgb(83, 77, 77);
+
+    width: 100%;
+    height: 40px;
+
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+
+/* Botão voltar */
+
+#vlt {
+    text-decoration: none;
+
+    background-color: rgb(94, 64, 64);
+    color: rgb(184, 183, 183);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    width: 85px;
+    height: 25px;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    box-shadow: 0px 0px 10px black;
+
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#vlt:hover {
+    box-shadow: 0 0 30px black;
+    color: red;
+}
+
+
+/* Pontuação */
+
+#pta {
+    position: absolute;
+
+    bottom: 10px;
+    left: 10px;
+
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Tipos */
+
+.tipo {
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:300px;
+    z-index:9999;
+    border-radius:25%;
+    border:2px solid black;
+}
+
+.tipo.bomba {
+    background-color:darkred;
+}
+
+.tipo.dica {
+    background-color:lightgreen;
+}
+
+.tipo.acao1 {
+    background-color:chocolate;
+}
+
+.tipo.acao2 {
+    background-color:royalblue;
+}
+
+.tipo.acao3 {
+    background-color:lightblue;
+}
+
+.tipo.acao4 {
+    background-color:gold;
+}
+
+.tipo.acao5 {
+    background-color:lime;
+}
