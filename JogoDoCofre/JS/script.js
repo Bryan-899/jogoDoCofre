@@ -235,15 +235,16 @@ function criarJogo() {
 function criarDica() {
 
     const dica = document.createElement("div");
+    const icon = document.createElement("i");
 
     dica.setAttribute("class", "tipo dica");
+    icon.setAttribute("class", "fa fa-question-circle-o");
 
-    dica.textContent = "?";
+    dica.appendChild(icon);
 
     dica.onclick = function () {
         dica.remove();
     };
-
     document.body.appendChild(dica);
 }
 
@@ -255,10 +256,12 @@ function criarDica() {
 function criarBomba() {
 
     const bomba = document.createElement("div");
+    const icon = document.createElement("i");
 
     bomba.setAttribute("class", "tipo bomba");
+    icon.setAttribute("class", "fa fa-bomb");
 
-    bomba.textContent = "X";
+    bomba.appendChild(icon);
 
     bomba.onclick = function () {
         bomba.remove();
@@ -275,10 +278,12 @@ function criarBomba() {
 function criarAcao1() {
 
     const acao = document.createElement("div");
+    const icon = document.createElement("i");
 
     acao.setAttribute("class", "tipo acao1");
+    icon.setAttribute("class", "fa fa-crosshairs");
 
-    acao.textContent = "RoP";
+    acao.appendChild(icon);
 
     acao.onclick = function () {
         acao.remove();
@@ -295,10 +300,12 @@ function criarAcao1() {
 function criarAcao2() {
 
     const acao = document.createElement("div");
+    const icon = document.createElement("i");
 
     acao.setAttribute("class", "tipo acao2");
+    icon.setAttribute("class", "fa fa-clone");
 
-    acao.textContent = "ReP";
+    acao.appendChild(icon);
 
     acao.onclick = function () {
         acao.remove();
@@ -315,10 +322,12 @@ function criarAcao2() {
 function criarAcao3() {
 
     const acao = document.createElement("div");
+    const icon = document.createElement("i");
 
     acao.setAttribute("class", "tipo acao3");
+    icon.setAttribute("class", "fa fa-eye");
 
-    acao.textContent = "EsP";
+    acao.appendChild(icon);
 
     acao.onclick = function () {
         acao.remove();
@@ -335,10 +344,12 @@ function criarAcao3() {
 function criarAcao4() {
 
     const acao = document.createElement("div");
+    const icon = document.createElement("i");
 
     acao.setAttribute("class", "tipo acao4");
+    icon.setAttribute("class", "fa fa-exchange");
 
-    acao.textContent = "TrP";
+    acao.appendChild(icon);
 
     acao.onclick = function () {
         acao.remove();
@@ -355,10 +366,12 @@ function criarAcao4() {
 function criarAcao5() {
 
     const acao = document.createElement("div");
+    const icon = document.createElement("i");
 
     acao.setAttribute("class", "tipo acao5");
+    icon.setAttribute("class", "fa fa-sort-numeric-asc");
 
-    acao.textContent = "CnfN";
+    acao.appendChild(icon);
 
     acao.onclick = function () {
         acao.remove();
