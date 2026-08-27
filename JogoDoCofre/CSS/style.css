@@ -204,19 +204,19 @@ body {
     left:50%;
     top:50%;
     transform:translate(-50%,-50%);
-    width:400px;
-    height:400px;
+    width:350px;
+    height:350px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:300px;
     z-index:9999;
-    border-radius:25%;
+    border-radius:100%;
     border:2px solid black;
 }
 
 .tipo.bomba {
-    background-color:darkred;
+    background-color:gold;
 }
 
 .tipo.dica {
@@ -228,17 +228,17 @@ body {
 }
 
 .tipo.acao2 {
-    background-color:royalblue;
+    background-color:firebrick;
 }
 
 .tipo.acao3 {
-    background-color:lightblue;
+    background-color:royalblue;
 }
 
 .tipo.acao4 {
-    background-color:gold;
+    background-color:darkorange;
 }
 
 .tipo.acao5 {
-    background-color:lime;
+    background-color:mediumseagreen;
 }
